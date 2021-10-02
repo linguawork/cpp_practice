@@ -6,7 +6,7 @@
 /*   By: areggie <areggie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/29 22:37:22 by areggie           #+#    #+#             */
-/*   Updated: 2021/10/02 20:31:26 by areggie          ###   ########.fr       */
+/*   Updated: 2021/10/02 21:08:01 by areggie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,10 @@ https://www.youtube.com/watch?v=jyaxGwOHFJ4
 Для чего непонятно!
 
 Changed
+объяснение с кодом зачем нужен виртуальный деструктор:
+http://cpp-reference.ru/articles/virtual-destructor/
+	
+
 */
 
 
