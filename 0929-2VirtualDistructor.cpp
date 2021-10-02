@@ -6,7 +6,7 @@
 /*   By: areggie <areggie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/29 22:37:22 by areggie           #+#    #+#             */
-/*   Updated: 2021/10/02 21:08:01 by areggie          ###   ########.fr       */
+/*   Updated: 2021/10/02 22:59:22 by areggie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,8 @@ https://www.youtube.com/watch?v=JypBB4J0XrY
 Виртуальный деструктор КЛАССА C++. 
 Что это такое. 
 Наследование.
- Полиморфизм. 
- Для начинающих #105
+Полиморфизм. 
+Для начинающих #105
 */
 
 /*
@@ -37,9 +37,7 @@ https://www.youtube.com/watch?v=jyaxGwOHFJ4
 
 Changed
 объяснение с кодом зачем нужен виртуальный деструктор:
-http://cpp-reference.ru/articles/virtual-destructor/
-	
-
+http://cpp-reference.ru/articles/virtual-destructor/	
 */
 
 
