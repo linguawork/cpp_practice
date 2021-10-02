@@ -6,7 +6,7 @@
 /*   By: areggie <areggie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/29 22:37:22 by areggie           #+#    #+#             */
-/*   Updated: 2021/09/29 22:52:47 by areggie          ###   ########.fr       */
+/*   Updated: 2021/10/02 20:31:26 by areggie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,9 @@ https://www.youtube.com/watch?v=JypBB4J0XrY
 https://www.youtube.com/watch?v=jyaxGwOHFJ4
 чисто виртуальный диструктор который делает абстрактный класс
 Для чего непонятно!
+
+Changed
 */
+
 
 
