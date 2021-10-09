@@ -1,26 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   211008-0UslovnayaKompilyacia.cpp                   :+:      :+:    :+:   */
+/*   211009-2Throw.cpp                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: areggie <areggie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/08 21:14:01 by areggie           #+#    #+#             */
-/*   Updated: 2021/10/09 23:58:32 by areggie          ###   ########.fr       */
+/*   Created: 2021/10/10 00:33:48 by areggie           #+#    #+#             */
+/*   Updated: 2021/10/10 00:35:09 by areggie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-https://www.youtube.com/watch?v=Zk1nBxHgp60
-лекция на Simple Code 68
-#ifdef #else #endif #if #elif #endif #ifndef 
+https://www.youtube.com/watch?v=FhlGFJ_zdKM
+Throw
+лекция на Simple Code 121
+
 */
 
 /*
-Условная компиляция. #ifdef #else #endif #if #elif #endif #ifndef что это. C ++ Урок #68
+Генерация исключений с++ пример. 
+throw c++ пример. 
+Изучение С++ для начинающих. 
+Урок #121
 */
 
 /*
-Этот урок к 03ex of CPP day 04
-Косвенное отношение
+Этот урок к CPP day05
+
+В продолжение лекции 120 о Try and Catch
 */
