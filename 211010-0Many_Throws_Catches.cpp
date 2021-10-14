@@ -6,7 +6,7 @@
 /*   By: areggie <areggie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/10 17:40:54 by areggie           #+#    #+#             */
-/*   Updated: 2021/10/11 21:21:38 by areggie          ###   ########.fr       */
+/*   Updated: 2021/10/12 18:16:37 by areggie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,14 @@ https://www.youtube.com/watch?v=guLK7Up6Kmc
 Этот урок к CPP day05
 
 В продолжение лекции 120, 121 о Try and Catch
+*/
+
+
+/*
+https://ravesli.com/urok-185-klassy-isklyucheniya-i-nasledovanie/#toc-4
+
+об интерфейсном классе exception можно здесь почитать
+
 */
 
 #include <iostream>

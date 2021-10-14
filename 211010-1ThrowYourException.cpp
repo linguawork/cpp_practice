@@ -6,7 +6,7 @@
 /*   By: areggie <areggie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/10 18:03:26 by areggie           #+#    #+#             */
-/*   Updated: 2021/10/11 22:20:37 by areggie          ###   ########.fr       */
+/*   Updated: 2021/10/13 20:09:27 by areggie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -259,10 +259,10 @@ int main()
 		Foo(1); 
 	
 	}
-	catch( MyException &excep ) // так как MyException это наследник от exception то перехват возможен
+	catch( MyException &excep ) //так как MyException это наследник от exception, то перехват возможен
 	{
 		std::cerr << "Блок 1 Мы поймали " << excep.what() << '\n'; // вызываем унаследованный метод what
-		std::cerr << "Состояние данных " << excep.GetDataState() << '\n'; // вызываем унаследованный метод what
+		std::cerr << "Состояние данных " << excep.GetDataState() << '\n'; // вызываем свой метод
 
 	}
 
