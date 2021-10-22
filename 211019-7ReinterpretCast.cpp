@@ -6,7 +6,7 @@
 /*   By: areggie <areggie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/19 17:35:10 by areggie           #+#    #+#             */
-/*   Updated: 2021/10/19 19:33:27 by areggie          ###   ########.fr       */
+/*   Updated: 2021/10/19 21:10:42 by areggie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,6 +44,9 @@ Type aliasing-правила затрагивают только пункты 5 
 */
 
 /*
+Доп статьи по Приведению Типов: http://cppstudio.com/post/5343/
+http://alenacpp.blogspot.com/2005/08/c.html
+
 Источник кода:
 https://en.cppreference.com/w/cpp/language/reinterpret_cast
 */

@@ -6,7 +6,7 @@
 /*   By: areggie <areggie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/19 13:50:45 by areggie           #+#    #+#             */
-/*   Updated: 2021/10/19 14:28:55 by areggie          ###   ########.fr       */
+/*   Updated: 2021/10/20 14:03:55 by areggie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -95,7 +95,7 @@ int str2int (int &i, char const *s, int base = 0)
     char *end;
     long  l;
     errno = 0;
-    l = strtol(s, &end, base);
+    l = strtol(s, &end, base);// http://www.c-cpp.ru/content/strtol-strtoul
     if ((errno == ERANGE && l == LONG_MAX) || l > INT_MAX) {
         return (0);
     }
