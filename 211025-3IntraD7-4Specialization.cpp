@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   211025-3Intrad7-4Specialization.cpp                :+:      :+:    :+:   */
+/*   211025-3IntraD7-4Specialization.cpp                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: areggie <areggie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/25 17:25:54 by areggie           #+#    #+#             */
-/*   Updated: 2021/10/25 22:41:50 by areggie          ###   ########.fr       */
+/*   Updated: 2021/11/08 17:33:34 by areggie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 Day07 
 Источник https://elearning.intra.42.fr/notions/piscine-c-d07-templates/subnotions/piscine-c-d07-templates-specialization/videos/cpp_bootcamp_-_d07_-_03_specialization
 
-Разобрал две перегрузки операторов и работу с разными типами данныз
+Разобрал две перегрузки операторов и работу с разными типами данныx
 
 
 */
@@ -32,10 +32,10 @@ class Pair
 		T const & _lhs;
 		U const & _rhs;
 
-		Pair <T, U> (void);
+		Pair <T, U> (void);//дефолтный конструктор без параметров в который в явном виде подаем шаблоны T and U
 
 	public:
-		Pair< T, U >( T const & lhs, U const & rhs ) : _lhs(lhs), _rhs(rhs)
+		Pair< T, U >( T const & lhs, U const & rhs ) : _lhs(lhs), _rhs(rhs) // конструктор с переменными
 		{
 			std::cout << "Generic template" << std::endl;
 			return;
