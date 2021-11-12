@@ -6,7 +6,7 @@
 /*   By: areggie <areggie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/11 16:17:56 by areggie           #+#    #+#             */
-/*   Updated: 2021/11/11 16:29:18 by areggie          ###   ########.fr       */
+/*   Updated: 2021/11/12 16:48:45 by areggie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,4 +21,32 @@
 //в разделе reference можно искать методы в разных контейнерах
 /*
 https://www.cplusplus.com/reference/list/list/push_back/
+*/
+
+/*
+https://ravesli.com/urok-197-kontejnery-stl/
+
+контейнеры STL делятся на три основные категории:
+
+   последовательные;
+
+   ассоциативные;
+
+   адаптеры.
+
+
+
+Начиная с C++11, STL содержит 6 контейнеров последовательности:(Sequence containers)
+
+   std::vector;
+
+   std::deque;
+
+   std::array;
+
+   std::list;
+
+   std::forward_list;
+
+   std::basic_string.
 */
