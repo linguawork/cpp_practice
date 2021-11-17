@@ -11,7 +11,7 @@ namespace Boo
 	}
 }
  
-namespace Foo = Boo::Doo; // Foo теперь считается как Boo::Doo //
+namespace Foo = Boo::Doo; // Foo теперь считается как Boo::Doo  и является псевдонимомо
  
 int main()
 {
