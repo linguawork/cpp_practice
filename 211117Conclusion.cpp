@@ -6,7 +6,7 @@
 /*   By: areggie <areggie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/17 18:46:06 by areggie           #+#    #+#             */
-/*   Updated: 2021/11/17 22:00:27 by areggie          ###   ########.fr       */
+/*   Updated: 2021/11/24 15:03:17 by areggie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,13 +40,24 @@ https://stackoverflow.com/questions/1662107/whats-the-difference-between-stdstri
 
 
 https://www.cplusplus.com/reference/string/string/
-ПО ссылку указаны методы класса STRING
+ПО ссылке указаны методы класса STRING
 MEMBER TYPES
 MEMBER FUNCTIONS (METHODS)
 
 
-в ex00 используется функция TOUPPER
+DAY1 - EX00 используется функция TOUPPER
 в CPP лучше использовать https://www.cplusplus.com/reference/locale/toupper/
 https://en.cppreference.com/w/cpp/locale/locale //??
 https://thispointer.com/converting-a-string-to-upper-lower-case-in-c-using-stl-boost-library/
+*/
+
+/* A few main functions from https://www.geeksforgeeks.org/stdstring-class-in-c/ */
+
+//DAY1 - EX01
+
+/*
+запись строки через метод getline () https://www.cplusplus.com/reference/string/string/getline/?kw=getline
+и запись в телефонную книгу
+
+
 */
