@@ -1,3 +1,11 @@
+
+/* 
+Дата создания 21 09 09 
+Переименовал под день01 21 12 04
+source: https://www.youtube.com/watch?v=vtslSm2GA9w&t=1s 
+	лекция на Simple Code
+*/
+
 /* 
 new c++ что это. 
 new c++ пример.
@@ -14,8 +22,6 @@ delete как free в С
  Обязательно нужно зачищать 
 */
 
-/* https://www.youtube.com/watch?v=vtslSm2GA9w&t=1s */
-// лекция на Simple Code
 
 
 #include <iostream>
