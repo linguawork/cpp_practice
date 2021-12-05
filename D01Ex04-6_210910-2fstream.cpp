@@ -15,6 +15,10 @@
 /*
 вместо ifstream и ofstream можно просто использовать fstream с флагами
 //чтения и записи
+
+https://www.cplusplus.com/reference/fstream/fstream/open/
+https://www.cplusplus.com/reference/fstream/ifstream/is_open/
+https://www.cplusplus.com/reference/fstream/fstream/close/ 
 к дню 01 упр04 по ++
 */
 
@@ -28,7 +32,7 @@ int main()
 	std::string path = "text.txt";
 	std::fstream file; // создаем объект класса
 	file.open(path);// объект класса имеет название существ файла
-	if (!filein.is_open()) // проверка на открытие файла, если он сущ
+	if (!file.is_open()) // проверка на открытие файла, если он сущ
 	{
 		std::cout << "Could not open " << std::endl;
 		//return(1); // можно выходить из проги

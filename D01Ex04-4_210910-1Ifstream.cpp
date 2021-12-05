@@ -8,6 +8,7 @@
 Урок #116
 */
 
+
 #include <iostream>
 #include <string>
 #include <fstream>
@@ -16,6 +17,8 @@
 /*
 здесь используем ifstream (input file stream) - cчитываем из файла
 ifstream - класс  библиотеки fstream// у него есть свои методы
+https://www.cplusplus.com/reference/fstream/ifstream/
+
 к дню 01 упр04 по ++
 */
 

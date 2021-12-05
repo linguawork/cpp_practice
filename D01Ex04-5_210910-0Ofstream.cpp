@@ -10,13 +10,9 @@ c++ ofstream. Изучение С++ для начинающих.
 #include <iostream>
 #include <fstream>
 
-
 /*
 ofstream - класс  библиотеки fstream
 */
-
-
-
 
 int main()
 {

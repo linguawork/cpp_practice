@@ -1,5 +1,9 @@
 /*
 источник https://www.cplusplus.com/reference/string/string/erase/
+https://www.cplusplus.com/reference/string/string/insert/
+https://www.cplusplus.com/reference/string/string/operator+=/
+https://www.cplusplus.com/reference/string/string/length/
+
 */
 
 
