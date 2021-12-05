@@ -30,7 +30,6 @@ std::string GetDataFromWebServer()
 
  void Show_different_functions(std::string (*foo) ()) // в эту функцию можно подавать 
  //указатель на функцию // параметры указателя должны быть одинаковые как в функциях
-
  //или true or false
  // general manager gathers the data from
  //different functions made by his colleages separately

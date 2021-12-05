@@ -29,7 +29,6 @@ void Function2()
 
 
 
-
 //тип функции (*ptr_name)(принимаемые типы данных)
 
 int main()
