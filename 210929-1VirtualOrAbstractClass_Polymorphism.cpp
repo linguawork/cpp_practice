@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   0929-1VirtualOrAbstractClass_Polymorphism.c        :+:      :+:    :+:   */
+/*   210929-1VirtualOrAbstractClass_Polymorphism        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: areggie <areggie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/29 21:57:03 by areggie           #+#    #+#             */
-/*   Updated: 2021/10/07 00:22:14 by areggie          ###   ########.fr       */
+/*   Updated: 2021/12/09 21:33:03 by areggie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,7 +56,7 @@ http://cpp.sh/2xnzn
 #include <string>
 
 
-class Weapon
+class Weapon // Пример Абстрактного класса
 {
 public:
 	virtual void Shoot() = 0;
