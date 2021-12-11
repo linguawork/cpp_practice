@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   210929-1VirtualOrAbstractClass_Polymorphism        :+:      :+:    :+:   */
+/*   210929-1AbstractClass_Polymorphism.cpp             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: areggie <areggie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/29 21:57:03 by areggie           #+#    #+#             */
-/*   Updated: 2021/12/09 21:33:03 by areggie          ###   ########.fr       */
+/*   Updated: 2021/12/11 19:36:25 by areggie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,12 +24,18 @@ virtual. //override.
 
 /*
 Polymorphism
-Аbstract Class // Если в классе есть хотя бы один виртуальный метод (который = 0 и ничего не
-реализует ) то такой класс называется абстрактным
+Аbstract Class // Это базовый класс. Если в этом базовом классе есть хотя бы один ЧИСТО виртуальный метод (который = 0 и ничего не
+реализует (хотя иногда он может иметь реализацию) ) то такой класс называется абстрактным
 
 Так как абстрактный класс ничего не реализует он создается ради удобства систематизации наследуемых
 классов в один какой-то абстрактный класс. Пример абстрактный класс оружия который может иметь
 наследуемые классы огнестрельного и холодного оружия
+
+An abstract class is a class that is designed to be specifically used as a base class. 
+An abstract class contains at least one pure virtual function. 
+You declare a pure virtual function by using a pure specifier ( = 0 ) in the declaration 
+of a virtual member function in the class declaration.
+Source: https://www.ibm.com/docs/en/zos/2.4.0?topic=only-abstract-classes-c
 */
 
 /*
