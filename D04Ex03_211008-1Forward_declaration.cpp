@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   211008-1Forward_declaration.cpp                    :+:      :+:    :+:   */
+/*   D04Ex03_211008-1Forward_declaration.cpp            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: areggie <areggie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/08 21:27:57 by areggie           #+#    #+#             */
-/*   Updated: 2021/10/08 21:58:26 by areggie          ###   ########.fr       */
+/*   Updated: 2021/12/13 21:16:34 by areggie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,9 @@ https://ru.wikipedia.org/wiki/Pragma_once
 
 
 
-Forward declaration
+Forward declaration в интерфейсе Icharacter
+Так как в классе используется другой класс Amateria то он просто объявляется в начале 
+файла как header, например:  class AMateria; 
 
 https://stackoverflow.com/questions/9906402/should-one-use-forward-declarations-instead-of-includes-wherever-possible?rq=1
 Если есть указатель какого-то класса среди функций предпочтительней просто

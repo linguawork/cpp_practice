@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   211201Std::string(str).cpp                         :+:      :+:    :+:   */
+/*   D00Ex00_211201Std::string(str).cpp                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: areggie <areggie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/01 18:42:05 by areggie           #+#    #+#             */
-/*   Updated: 2021/12/01 19:24:10 by areggie          ###   ########.fr       */
+/*   Updated: 2021/12/13 16:42:09 by areggie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,7 +54,7 @@ int main ()
   std::string s6a (10, 'x'); // (6) fill constructor
 //Fills the string with n consecutive copies of character c.
 
-  std::string s6b (10, 42);      // 42 is the ASCII code for '*'
+  std::string s6b (10, 42);      // 42 is the ASCII code for '*', output of the symbol 10 times
   
   std::string s7 (s0.begin(), s0.begin()+7);//(7) range constructor
 //Copies the sequence of characters in the range [first,last), in the same order.
