@@ -1,20 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   211025TemplateClassIntra.cpp                       :+:      :+:    :+:   */
+/*   211025-1IntraD7-2TemplateClass.cpp                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: areggie <areggie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/25 14:40:09 by areggie           #+#    #+#             */
-/*   Updated: 2021/10/25 14:59:15 by areggie          ###   ########.fr       */
+/*   Updated: 2022/04/03 21:18:05 by areggie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
+
+Использование класса в самом классе (интересно)
+
 Standard Template Library = STL 
 Библиотека написанных классов которой можно пользоваться
 
-Плохой пример кода от французов Лучше пример на Simple Code
+Плохой пример от французов Лучше пример на Simple Code (без кода )
+
+
 */
 
 #include <iostream>
@@ -22,24 +27,24 @@ template<typename T>
 class List
 {
 	private:
-	T 		_content;
-	List<T> * _next;
+		T 		_content;
+		List<T> * _next;
 
 	public:
-	
-	List<T>(T const &content)
-	{
-		//etc
-	}
-	List<T>(List<T> const & list)
-	{
-		//etc
-	}
-	
-	~List<T>(void)
-	{
+		List<T>(T const & content) : _content(content)
+		{ 
+			//etc
+		}
 		
-	}
+		List<T>( List<T> const & list) // в классе можно принимать сам класс
+		{
+			//etc
+		}
+		
+		~List<T>(void)
+		{
+			
+		}
 	
 	//Etc
 };

@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   211024ReinterpretCast.cpp                          :+:      :+:    :+:   */
+/*   211024-1TemplateReinterpretCast.cpp                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: areggie <areggie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/24 14:11:59 by areggie           #+#    #+#             */
-/*   Updated: 2021/10/24 14:12:49 by areggie          ###   ########.fr       */
+/*   Updated: 2022/04/03 19:53:09 by areggie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,12 @@ Why do we need reinterpret cast for pointers?
 https://stackoverflow.com/questions/1845482/what-is-uintptr-t-data-type
 There are already many good answers to the part "what is uintptr_t data type". 
 I will try to address the "what it can be used for?" part in this post.
+
+uintptr_t is an unsigned integer type that is capable of storing a data pointer. 
+Which typically means that it's the same size as a pointer.
+
+uintptr_t может преобразовать тип указателя void и int ( так как он размером с указатель) 
+
 
 Primarily for bitwise operations on pointers. 
 Remember that in C++ one cannot perform bitwise operations on pointers. 
