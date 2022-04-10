@@ -1,7 +1,8 @@
 /*
 источник кода https://www.programiz.com/dsa/binary-tree
+Простая программа прохода по бинарному дереву в трех вариантах
 
-Простая программа 
+похожая программа описана на https://www.geeksforgeeks.org/binary-tree-set-1-introduction/
 
 */
 
