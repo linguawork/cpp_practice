@@ -10,9 +10,9 @@ template<class T, class Container = std::vector<T> >
 	class stack{
 
 	public:
-	typedef T value_type;
-	typedef Container container_type;
-	typedef typename Container::size_type size_type;
+	typedef T value_type; // тип
+	typedef Container container_type; // тпи кон
+	typedef typename Container::size_type size_type; // 
 	typedef value_type& reference;
 	typedef const value_type& const_reference;
 
