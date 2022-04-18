@@ -1,8 +1,4 @@
 
-/* https://www.youtube.com/watch?v=ULpr1Z0WEtQ&list=PLQOaTSbfxUtBm7DxblJZShqBQnBAVzlXX&index=2 */
-// лекция на Simple Code
-// https://www.youtube.com/watch?v=ULpr1Z0WEtQ&list=PLQOaTSbfxUtBm7DxblJZShqBQnBAVzlXX&index=5
-
 /* 
 Что такое класс. 
 Что такое объект класса. 
@@ -10,10 +6,25 @@
  Класс ООП это. Урок #73
  */
 
+/*
+
+видео французов
+https://elearning.intra.42.fr/notions/piscine-c-d00-c-basics/subnotions/piscine-c-d00-c-basics-class-and-instance/videos/class-and-instance-fab87de6-c15a-4716-b93d-9c048c38b884
+
+лекция на Simple Code
+https://www.youtube.com/watch?v=ULpr1Z0WEtQ&list=PLQOaTSbfxUtBm7DxblJZShqBQnBAVzlXX&index=2 
+
+лекция на Simple Code
+https://www.youtube.com/watch?v=ULpr1Z0WEtQ&list=PLQOaTSbfxUtBm7DxblJZShqBQnBAVzlXX&index=5
+
+ */
+
+
+
 #include <iostream>
 // using namespace std;//если использовать пространство имен STD 
 // /*то можно использовать string (это как char в С), cout cin без std::
-// но если не использовать namespace то нужно будет приписывать к string
+// но если не использовать namespace то нужно будет приписывать std:: к string
 // принадлежность к классу std::string*/
 
 class Human // это название класса // по сути это ТИП данных как инт и тд

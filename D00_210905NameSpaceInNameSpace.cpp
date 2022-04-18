@@ -1,5 +1,8 @@
 #include <iostream>
 /*
+
+https://elearning.intra.42.fr/notions/piscine-c-d00-c-basics/subnotions/piscine-c-d00-c-basics-namespaces/videos/namespaces-b808b721-b1f6-4a1e-b378-07007568181d
+
 https://ravesli.com/urok-53-prostranstva-imen/
 вложенные пространства имен
 
