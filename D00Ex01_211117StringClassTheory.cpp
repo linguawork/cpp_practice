@@ -6,7 +6,7 @@
 /*   By: areggie <areggie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/17 18:46:06 by areggie           #+#    #+#             */
-/*   Updated: 2021/11/24 15:03:17 by areggie          ###   ########.fr       */
+/*   Updated: 2022/04/19 21:21:44 by areggie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,7 @@ MEMBER TYPES
 MEMBER FUNCTIONS (METHODS)
 
 
-DAY1 - EX00 используется функция TOUPPER
+DAY00 - EX00 используется функция TOUPPER
 в CPP лучше использовать https://www.cplusplus.com/reference/locale/toupper/
 https://en.cppreference.com/w/cpp/locale/locale //??
 https://thispointer.com/converting-a-string-to-upper-lower-case-in-c-using-stl-boost-library/
@@ -53,7 +53,7 @@ https://thispointer.com/converting-a-string-to-upper-lower-case-in-c-using-stl-b
 
 /* A few main functions from https://www.geeksforgeeks.org/stdstring-class-in-c/ */
 
-//DAY1 - EX01
+//DAY00 - EX01
 
 /*
 запись строки через метод getline () https://www.cplusplus.com/reference/string/string/getline/?kw=getline

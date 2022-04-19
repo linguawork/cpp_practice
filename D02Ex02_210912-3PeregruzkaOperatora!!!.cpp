@@ -41,7 +41,7 @@ this -> n (= это lhs left hand side operator)
 Integer & Integer:: operator=(Integer const &rhs) // пример из 
 // программы французов
 {
-	std::cout << "Assignation operatot called from" << this->_n;
+	std::cout << "Assignation operator called from" << this->_n;
 	std::cout << " to " << rhs.getValue() << std::endl;
 
 }

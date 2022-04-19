@@ -48,18 +48,20 @@ int main()
 	int value;
 	
 	value = 5;
-	std::cout << "value = " << value << std::endl;
+	std::cout << "original value = " << value << std::endl;
 	
 
-	std::cout << "Foo1 = " << std::endl;
+	std::cout << "Foo1 Passing By Value (по значению) = " << std::endl;
 	Foo1(value); // передаем без изменений
 	std::cout << "value = " << value << std::endl << std::endl;
 
-	std::cout << "Foo2 = " << std::endl;
-	Foo2(value);// ссылку (хотя внешне выглядит как передача по значению но нужно смотреть код фнукции) передаем как есть БЕЗ амперсанда как в указателях // ссылка внутри отработает
+	std::cout << "Foo2 passing by Ref (skip ampersand) = " << std::endl;
+	Foo2(value);// ссылку (хотя внешне выглядит как передача по значению но нужно смотреть код фнукции) 
+	//передаем как есть БЕЗ амперсанда как в указателях 
+	// ссылка внутри отработает
 	std::cout << "value = " << value << std::endl << std::endl;
 
-	std::cout << "Foo3 = " << std::endl;
+	std::cout << "Foo3 passing by Ptr (write ampersand) = " << std::endl;
 	Foo3(&value); // так как передаем указатель, то должны приписать амперсанд
 	std::cout << "value = " << value << std::endl << std::endl;
 
