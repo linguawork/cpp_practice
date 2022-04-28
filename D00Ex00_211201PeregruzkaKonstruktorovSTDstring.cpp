@@ -6,7 +6,7 @@
 /*   By: areggie <areggie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/01 18:42:05 by areggie           #+#    #+#             */
-/*   Updated: 2021/12/13 16:42:09 by areggie          ###   ########.fr       */
+/*   Updated: 2022/04/28 20:25:25 by areggie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,10 @@
 #include <iostream>
 #include <string>
 /*
+
+Пример перегрузки конструктора для объектов класса std::string
+
+
 (1) empty string constructor (default constructor)
 Constructs an empty string, with a length of zero characters.
 (2) copy constructor
