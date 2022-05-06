@@ -6,7 +6,7 @@
 /*   By: areggie <areggie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/13 18:44:41 by areggie           #+#    #+#             */
-/*   Updated: 2022/04/13 19:13:51 by areggie          ###   ########.fr       */
+/*   Updated: 2022/05/06 12:56:43 by areggie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,12 +30,14 @@ https://www.udemy.com/course/cpp-in-detail-common-idioms/
 /*
  * Enable-if
  * It is used to allow function overloading based on 
- * arbitrary properties of type. Relies on SFINE
+ * arbitrary (произвольный) properties of type. Relies on SFINE
  * (if invalid argument or return type is formed during 
  * instantiation of function template, the instantiation 
  * is removed instead of compilation error).
  * Often used in C++ template metaprogramming, 
  * Boost libraries, and C++ STL.
+ * 
+ * 
  */
 
 

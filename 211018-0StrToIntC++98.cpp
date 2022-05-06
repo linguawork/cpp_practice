@@ -6,7 +6,7 @@
 /*   By: areggie <areggie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/18 17:38:35 by areggie           #+#    #+#             */
-/*   Updated: 2021/10/19 13:44:44 by areggie          ###   ########.fr       */
+/*   Updated: 2022/05/06 12:02:54 by areggie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,11 +32,11 @@ STRING to INT
 
 int main()
 {
-	std::stringstream myString;
+	std::stringstream myString; // объект класса stringstream (поток для чаров) - буфер
  
 	int nValue = 336000;
 	double dValue = 12.14;
-	myString << nValue << " " << dValue;  // загоняем в буфер с пробелом
+	myString << nValue << " " << dValue;  // загоняем в буфер int и double пробелом
  
 	std::string strValue1, strValue2;
 	myString >> strValue1 >> strValue2; // оператор >> делит по пробелам

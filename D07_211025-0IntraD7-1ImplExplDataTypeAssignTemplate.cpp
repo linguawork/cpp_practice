@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   211025-0IntraD7-1Template.cpp                      :+:      :+:    :+:   */
+/*   D07_211025-0IntraD7-1ImplExplDataTypeAssign        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: areggie <areggie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/25 13:38:34 by areggie           #+#    #+#             */
-/*   Updated: 2022/04/03 20:35:44 by areggie          ###   ########.fr       */
+/*   Updated: 2022/05/05 14:44:36 by areggie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,7 +57,7 @@ int main (void)
 	std::cout << "Max of " << c << " and " << d << " is ";
 	std::cout << max<float> (c, d) << std :: endl;
 
-	std::cout << "<<<<<Скрытое (flaot) присвоение типа для шаблона: ";
+	std::cout << "<<<<<Скрытое (float) присвоение типа для шаблона: ";
 	std::cout << "Max of " << c << " and " << d << " is ";
 	std::cout << max(c, d) << std::endl;
 
@@ -73,7 +73,7 @@ int main (void)
 
 
 //no problem here: можно подавать функции и присваивать функцию переменной (так как есть возврат)
-	int ret = max<int>(foo(a), foo(b));// explicit instaciation - явная типизация
+	int ret = max<int>(foo(a), foo(b));// explicit instanciation - явная типизация
 	std::cout << "Max of " << a << " and " << b << " is ";
 	std::cout << ret << std::endl;
 
