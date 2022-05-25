@@ -6,11 +6,17 @@
 /*   By: areggie <areggie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/25 15:00:59 by areggie           #+#    #+#             */
-/*   Updated: 2022/05/25 16:06:46 by areggie          ###   ########.fr       */
+/*   Updated: 2022/05/25 16:11:50 by areggie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+
+
+
 /**************************************************************************
+  Источник https://www.youtube.com/watch?v=6OoSgY6NVVk
+
+
 	SET
 
 	source:	https://en.cppreference.com/w/cpp/container/set#:~:text=std%3A%3Aset%20is%20an,implemented%20as%20red%2Dblack%20trees
@@ -35,6 +41,9 @@
 // класс принимает три шаблона и работает обычно на красном черном дереве
 	template< class Key, class Compare = std::less<Key>, class Allocator = std::allocator<Key> > 
 	class set;
+
+
+
 
 
 
