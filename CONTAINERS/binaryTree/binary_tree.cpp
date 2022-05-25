@@ -6,7 +6,7 @@
 /*   By: areggie <areggie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/11 15:48:54 by areggie           #+#    #+#             */
-/*   Updated: 2022/04/11 15:49:00 by areggie          ###   ########.fr       */
+/*   Updated: 2022/05/25 14:46:01 by areggie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,7 +64,8 @@ void traversePreOrder(struct node *temp)
 void traverseInOrder(struct node *temp) 
 {
   if (temp != NULL) {
-    traverseInOrder(temp->left);//рекурсия
+    // cперва выводим все что слева
+    traverseInOrder(temp->left);//рекурсией с самой нижней
     cout << " " << temp->data;
     traverseInOrder(temp->right);
   }
