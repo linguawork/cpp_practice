@@ -1,18 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   SearchInTree.cpp                                   :+:      :+:    :+:   */
+/*   SearchFuncInTree.cpp                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: areggie <areggie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/25 19:52:02 by areggie           #+#    #+#             */
-/*   Updated: 2022/05/25 19:52:51 by areggie          ###   ########.fr       */
+/*   Updated: 2022/05/26 19:05:16 by areggie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 
 /*
 
+	this is the function to search element in an ORDERED binary tree (BST)
 */
 
 // C function to search a given key in a given BST

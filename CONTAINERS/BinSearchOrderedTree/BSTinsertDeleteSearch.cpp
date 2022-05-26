@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   BSTinsertDelete.cpp                                :+:      :+:    :+:   */
+/*   BSTinsertDeleteSearch.cpp                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: areggie <areggie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/26 18:16:07 by areggie           #+#    #+#             */
-/*   Updated: 2022/05/26 19:07:02 by areggie          ###   ########.fr       */
+/*   Updated: 2022/05/26 19:37:41 by areggie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,6 +65,9 @@ struct Node
 	struct Node *left;
 	struct Node *right;
 };
+
+/**************DELETING_ELEMENT************************/
+
 //Function to find minimum in a tree. 
 Node* FindMin(Node* root)
 {
@@ -105,8 +108,12 @@ struct Node* Delete(struct Node *root, int data) {
 	return root;
 }
  
+
+/**********************ONE of TRAVERSAL FUNCTIONS****************************/ 
 //Function to visit nodes in Inorder
-void Inorder(Node *root) {
+
+void Inorder(Node *root) 
+{
 	if(root == NULL) return;
  
 	Inorder(root->left);       //Visit left subtree
@@ -114,7 +121,10 @@ void Inorder(Node *root) {
 	Inorder(root->right);      // Visit right subtree
 }
  
-// Function to Insert Node in a Binary Search Tree
+
+
+ 
+/************ Function to Insert Node in a Binary Search Tree***********/
 Node* Insert(Node *root,char data) {
 	if(root == NULL) {
 		root = new Node();
@@ -166,6 +176,27 @@ print2DUtil(root, 0);
 
 
 
+/***************SEARCH FUNCTION******************/
+Node *search(Node *root, int key)
+{
+	// Base Cases: root is null or key is present at root
+	if (root == NULL || root->data == key)
+		return root;
+	else 
+		return root; // if not found return the old value
+	
+	// Key is greater than root's key
+	if (root->data < key)
+		return search(root->right, key);
+
+	// Key is smaller than root's key
+	if (root->data > key)
+		return search(root->left, key);
+	
+
+}
+
+
 int main() 
 {
 	/*Code To Test the logic
@@ -183,6 +214,13 @@ int main()
 	root = Insert(root,4); 
 	root = Insert(root,1);
 	root = Insert(root,11);
+
+	Node* found =search(root, 8);
+	printf("Searched and found the element, which is: \n");
+	if (found == root)
+		cout << "Not found" << endl;
+	else
+		cout << found->data << endl;
 
 	/**I added printing the BST, it prints from left to right**/
 	printf("printing before deletion and after insertion");

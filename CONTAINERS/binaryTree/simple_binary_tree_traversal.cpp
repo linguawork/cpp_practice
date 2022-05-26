@@ -6,11 +6,14 @@
 /*   By: areggie <areggie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/11 15:48:54 by areggie           #+#    #+#             */
-/*   Updated: 2022/05/26 18:59:14 by areggie          ###   ########.fr       */
+/*   Updated: 2022/05/26 19:03:56 by areggie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
+
+Simple Unordered Binary tree traversa;
+
 источник кода https://www.programiz.com/dsa/binary-tree
 Простая программа прохода по бинарному дереву в трех вариантах
 
