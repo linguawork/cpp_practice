@@ -6,7 +6,7 @@
 /*   By: areggie <areggie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/27 13:45:45 by areggie           #+#    #+#             */
-/*   Updated: 2022/05/27 17:11:20 by areggie          ###   ########.fr       */
+/*   Updated: 2022/05/27 17:16:33 by areggie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -188,34 +188,34 @@ void avl_tree::postorder(avl *t) {
 #define COUNT 10
 // Function to print binary tree in 2D
 // It does reverse inorder traversal
-void avl_tree::print2DUtil(avl *t, int space)
+void avl_tree::print2DUtil(avl *r, int space)
 {
 	// Base case
-	if (t == NULL)
+	if (r == NULL)
 		return;
 
 	// Increase distance between levels
 	space += COUNT;
 
 	// Process right child first
-	avl_tree::print2DUtil(t->r, space);
+	avl_tree::print2DUtil(r->r, space);
 
 	// Print current node after space
 	// count
 	printf("\n");
 	for (int i = COUNT; i < space; i++)
 		printf(" ");
-	printf("%d\n", t->d);
+	printf("%d\n", r->d);
 
 	// Process left child
-	avl_tree::print2DUtil(t->l, space);
+	avl_tree::print2DUtil(r->l, space);
 }
 
 // Wrapper over print2DUtil()
-void avl_tree::print2D(avl *t)
+void avl_tree::print2D(avl *r)
 {
 // Pass initial space count as 0
-avl_tree::print2DUtil(t, 0);
+avl_tree::print2DUtil(r, 0);
 }
 
 
