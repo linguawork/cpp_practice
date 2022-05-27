@@ -6,7 +6,7 @@
 /*   By: areggie <areggie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/27 13:45:45 by areggie           #+#    #+#             */
-/*   Updated: 2022/05/27 17:31:53 by areggie          ###   ########.fr       */
+/*   Updated: 2022/05/27 19:09:19 by areggie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,24 @@
 	источник:
 		https://www.youtube.com/watch?v=jDM6_TnYIqE&t=1026s
       "10.1 Дерево AVL — вставка и повороты"
-		(в этом видео я добавил time-code)
+		В этом видео я добавил time-code by Ba Ma:
+         6:45 the time complexity problem of BST is in tree height
+         7:55 improving BST into AVL to resolve height issue
+         14:26 what is balance factor
+         17:40  balancing unbalanced trees, rotation.
+         19:06 LL imbalance (LL "single" rotation)
+         21:06 LR imbalance ( 21:27 LR "double" rotation)
+         23:27 RR imbalance (mirror of LL imbalance + rotation)
+         24:23 RL imbalance(mirror of RL imbalance+ rotation)
+         25:09 Rotations summary
+         25:26 Special  cases of rotations
+         26:24 1) Special LL rotation (example of long tree), (28:04) right node is dragged to become left
+         29:05 2) Special LR rotation (assume big tree), (29:58 Single step in place of double rotation),
+         (30:45 example of bigger size tree, 31:31 splitting nodes to left and right sides)
+         32:29 Generation of AVL trees
+         34:30 how to balance when we have many unbalanced nodes
+         36:15 calculate the longest distance when comparing balance
+         42:17 Red Black Tree and AVL tree comparing
 
 
 	Если сравнивать AVL tree и RBtree,  в AVL для балансировки используется
@@ -30,9 +47,19 @@
 	работы AVL tree
 
    Источник кода AVL tree нашел и модифицировал для распечатки (added option 6)
-   https://www.tutorialspoint.com/cplusplus-program-to-implement-avl-tree#:~:text=AVL%20tree%20is%20a%20self,elements%20on%20an%20AVL%20tree.
-   
    Прикольная реализация через структуру и класс с методами
+   https://www.tutorialspoint.com/cplusplus-program-to-implement-avl-tree#:~:text=AVL%20tree%20is%20a%20self,elements%20on%20an%20AVL%20tree.
+
+
+   Доп источники(я не смотрел) для прочтения по реализации AVL tree:
+   https://www.programiz.com/dsa/avl-tree
+   https://gist.github.com/Harish-R/097688ac7f48bcbadfa5 (code to study in C++)
+   https://www.geeksforgeeks.org/avl-tree-set-1-insertion/ (good site with code, I need to see this alternative)
+   
+   
+   
+   
+   
 	
 	
 */
@@ -65,7 +92,7 @@ class avl_tree {
       void inorder(avl *);
       void preorder(avl *);
       void postorder(avl*);
-	  void print2DUtil(avl *, int space);// added
+	   void print2DUtil(avl *, int space);// added
 		void print2D(avl *); //added
 	  
       avl_tree() {
