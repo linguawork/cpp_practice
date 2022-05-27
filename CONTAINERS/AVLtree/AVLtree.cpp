@@ -6,7 +6,7 @@
 /*   By: areggie <areggie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/27 13:45:45 by areggie           #+#    #+#             */
-/*   Updated: 2022/05/27 17:16:33 by areggie          ###   ########.fr       */
+/*   Updated: 2022/05/27 17:31:53 by areggie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,11 +15,12 @@
 
 	источник:
 		https://www.youtube.com/watch?v=jDM6_TnYIqE&t=1026s
+      "10.1 Дерево AVL — вставка и повороты"
 		(в этом видео я добавил time-code)
 
 
 	Если сравнивать AVL tree и RBtree,  в AVL для балансировки используется
-	больше операций сдвигов чем в красном черном дереве. И как следствие, 
+	больше поворотов-ротаций чем в красном черном дереве. И как следствие, 
 	AVL работает медленнее чем RB tree
 
 	в RBtree помогает ускориться наличие маркировки нод цветом
@@ -27,6 +28,11 @@
 
 	на этом сайте https://visualgo.net/en/bst можно посмотреть визуализацию
 	работы AVL tree
+
+   Источник кода AVL tree нашел и модифицировал для распечатки (added option 6)
+   https://www.tutorialspoint.com/cplusplus-program-to-implement-avl-tree#:~:text=AVL%20tree%20is%20a%20self,elements%20on%20an%20AVL%20tree.
+   
+   Прикольная реализация через структуру и класс с методами
 	
 	
 */
@@ -59,8 +65,8 @@ class avl_tree {
       void inorder(avl *);
       void preorder(avl *);
       void postorder(avl*);
-	  void print2DUtil(avl *, int space);
-		void print2D(avl *);
+	  void print2DUtil(avl *, int space);// added
+		void print2D(avl *); //added
 	  
       avl_tree() {
          r = NULL;
@@ -188,7 +194,7 @@ void avl_tree::postorder(avl *t) {
 #define COUNT 10
 // Function to print binary tree in 2D
 // It does reverse inorder traversal
-void avl_tree::print2DUtil(avl *r, int space)
+void avl_tree::print2DUtil(avl *r, int space) // added class namespace
 {
 	// Base case
 	if (r == NULL)
@@ -234,7 +240,7 @@ int main()
       cout << "3.InOrder traversal" << endl;
       cout << "4.PreOrder traversal" << endl;
       cout << "5.PostOrder traversal" << endl;
-      cout << "6.Print tree" << endl;
+      cout << "6.Print tree" << endl; // added this option
 		cout << "7.Exit" << endl;
       cout << "Enter your Choice: ";
       cin >> c;
