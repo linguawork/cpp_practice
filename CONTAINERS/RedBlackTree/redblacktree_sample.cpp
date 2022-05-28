@@ -6,7 +6,7 @@
 /*   By: areggie <areggie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/25 20:30:30 by areggie           #+#    #+#             */
-/*   Updated: 2022/05/27 20:55:32 by areggie          ###   ########.fr       */
+/*   Updated: 2022/05/28 13:36:25 by areggie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,10 +31,40 @@
 		https://www.youtube.com/watch?v=v6eDztNiJwo
 		6 rules for rebalancing
 		Boolean for colors
-
-		Watch Video3
-		https://www.youtube.com/watch?v=-qjrcxVmf2Q
 		
+		(You may copy-paste the time code below into the comment to the video, 
+		the link is shown above)
+		2:33 Example of Colorflip because we have two consecutive red elements(violation) and we have red aunt, after COLORFLIP we have to make the root black (3:25);
+		3:58 We INSERT 6 and we have got 2 red elements(violation).
+		4:17 Null is always black, and it is a black aunt of 6, so we need to ROTATE
+		5:25 We have RL rotation in red zone. This is like in AVL tree motion (by Abdul Bari), instead of double rotation we make one simple.
+		6:08 After rotation we need to fix (RESOLVE colors in parent-grandparent-aunt triangle) and get:
+			B
+		/     \
+		R       R
+		within the triangle (always working within one triangle).
+		7:05 We INSERT 8 (adding is always red) and we have violation (two consecutive reds) and red aunt, so we COLORFLIP in the triangle of aunt, grandparent, parent. So we change colors into:
+			R
+		/     \
+		B        B
+
+		8:32 it is interesting that the children of the root can be black or red,  alternatively one of them can be red or black. 3 states: all black, all red, one of them red(meaning another is black). And that is ok. As we can see.
+		8:56 = 4:17
+		9:38 LL-rotation (we drag over nail the one above two consecutive elements down raising the two red up)
+		10:47 After rotation we RESOLVE colors. We have three consecutive reds, so we need to make
+		equal number of black nodes on the left and the right sides of the root to have the balance. (root is always black, then we can have red and then black)
+		10:51 INSERT 10, it is red. Again violation, again ROTATE and FLIPCOLORS in parent - grandparent -aunt triangle.
+		14:38 ROTATE two reds in LL-rotation (dragging), 5 is dragged over nail and will hang from 3. (Abdul Bari good note).
+		15:04 RESOLVE colors (black root, red layer, black layer).
+		15:53 checking validity of the tree ( counting black node on the left  and on the right from the root, they should be equal, which is a balanced tree.
+		17:00 Valid RBT is not always valid AVL tree
+		17:10 Conclusion. BOOLEANS for colors, 6 rules for REBALANCING the RBT	
+
+		
+
+		Red Black Tree 3 - Classes
+		https://www.youtube.com/watch?v=-qjrcxVmf2Q
+		This is the pseudo-code for RBT (creating a class, interface and nested class)
 
 
 		
@@ -65,39 +95,48 @@ struct Node
 typedef Node *NodePtr;  // structure is defined as ptr
 
 // class RBTree implements the operations in Red Black Tree
-class RBTree {
-private:
-	NodePtr root;
-	NodePtr TNULL;
+class RBTree 
+{
+	private:
+		NodePtr root;
+		NodePtr TNULL;
 
 	// initializes the nodes with appropirate values
 	// all the pointers are set to point to the null pointer
-	void initializeNULLNode(NodePtr node, NodePtr parent) {
+	void initializeNULLNode(NodePtr node, NodePtr parent) 
+	{
 		node->data = 0;
 		node->parent = parent;
-		node->left = nullptr;
-		node->right = nullptr;
+		node->left = nullptr; // or NULL in std98
+		node->right = nullptr; // NULL in std98
 		node->color = 0;
 	}
 
-	void preOrderHelper(NodePtr node) {
-		if (node != TNULL) {
+	void preOrderHelper(NodePtr node) 
+	// why do you need this method? Looks like traversal, but 
+	{
+		if (node != TNULL) 
+		{
 			cout<<node->data<<" ";
 			preOrderHelper(node->left);
 			preOrderHelper(node->right);
 		} 
 	}
 
-	void inOrderHelper(NodePtr node) {
-		if (node != TNULL) {
+	void inOrderHelper(NodePtr node) 
+	{
+		if (node != TNULL) 
+		{
 			inOrderHelper(node->left);
 			cout<<node->data<<" ";
 			inOrderHelper(node->right);
 		} 
 	}
 
-	void postOrderHelper(NodePtr node) {
-		if (node != TNULL) {
+	void postOrderHelper(NodePtr node) 
+	{
+		if (node != TNULL) 
+		{
 			postOrderHelper(node->left);
 			postOrderHelper(node->right);
 			cout<<node->data<<" ";

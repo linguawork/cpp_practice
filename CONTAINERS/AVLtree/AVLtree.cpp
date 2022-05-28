@@ -6,7 +6,7 @@
 /*   By: areggie <areggie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/27 13:45:45 by areggie           #+#    #+#             */
-/*   Updated: 2022/05/27 19:09:19 by areggie          ###   ########.fr       */
+/*   Updated: 2022/05/28 13:40:14 by areggie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,13 +37,13 @@
 
 
 	Если сравнивать AVL tree и RBtree,  в AVL для балансировки используется
-	больше поворотов-ротаций чем в красном черном дереве. И как следствие, 
-	AVL работает медленнее чем RB tree
+	больше поворотов-ротаций, чем в красном черном дереве. И как следствие, 
+	AVL работает медленнее, чем RB tree
 
-	в RBtree помогает ускориться наличие маркировки нод цветом
+	В RBtree помогает ускориться наличие маркировки нод цветом.
 
 
-	на этом сайте https://visualgo.net/en/bst можно посмотреть визуализацию
+	На этом сайте https://visualgo.net/en/bst можно посмотреть визуализацию
 	работы AVL tree
 
    Источник кода AVL tree нашел и модифицировал для распечатки (added option 6)
@@ -55,7 +55,8 @@
    https://www.programiz.com/dsa/avl-tree
    https://gist.github.com/Harish-R/097688ac7f48bcbadfa5 (code to study in C++)
    https://www.geeksforgeeks.org/avl-tree-set-1-insertion/ (good site with code, I need to see this alternative)
-   
+   https://www.guru99.com/avl-tree.html (good code)
+   https://www.sanfoundry.com/cpp-program-implement-avl-trees/ (code)
    
    
    
