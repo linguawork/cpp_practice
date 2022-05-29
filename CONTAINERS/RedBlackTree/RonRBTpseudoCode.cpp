@@ -6,7 +6,7 @@
 /*   By: areggie <areggie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/28 15:14:38 by areggie           #+#    #+#             */
-/*   Updated: 2022/05/29 16:39:48 by areggie          ###   ########.fr       */
+/*   Updated: 2022/05/29 19:42:55 by areggie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -427,7 +427,7 @@
 				//so we foresee the possibility if it is null (which is blach)
 				if(node.parent.parent.right == NULL ||
 					node.parent.parent.right.isBlack) //if the node is black
-					return rotate(node);
+					return rotate(node); // will be introduced in the 6th lesson
 				//10:50 if the aunt is red we change color of grandparent and parent
 				if(node.parent.parent.right != NULL)
 					node.parent.parent.right.isBlack = false //if the node is red (Rob mistyped)
@@ -459,7 +459,59 @@
 			}
 			
 		}
+
+		//https://www.youtube.com/watch?v=IuG3WSaDumc
+		/**************Here is the lecture 6*************/
 		
+
+		//4types of rotation: right, left, left -rgiht, right-left
+		
+		//here is right or right-left
+		void rotate(Node<K,V> node)
+		{
+			if(node.isLeftChild)// if we are on the left node
+			{
+				//right-right
+				if (node.parent.isLeftChild) // if parent is left
+				{//we are left, parent is left so we right rotate or drag to the right
+				//so grandparent has to move
+					rightRotate(node.parent.parent)
+				//after rotation we correct the colors
+					node.isBlack = false
+					node.parent.isBlack = true;
+					if (node.parent.right != NULL)
+						node.parent.right.isBlack = false;
+						return;
+				}
+				
+				rightLeftRotate(node.parent.parent);
+				node.isBlack = true;
+				node.rihgt.isBlack = false;
+				node.left.isBlach = false;
+				return;		
+			}
+			// here is the code to mirror when Node is Right Child
+			if(node.isLeftChild =false)// if we are on the right node
+			{
+				//right-left
+				if (node.parent.isLeftChild=false) // if parent is right child
+				{//we are left, parent is child so we right-left(Abdul Bari) rotate or drag to the right and then jump over to the left
+				//so grandparent has to move
+					rightLeftRotate(node.parent.parent)
+				//after rotation we correct the colors
+					node.isBlack = true;
+					node.rihgt.isBlack = false;
+					node.left.isBlach = false;
+					return;		
+				}
+				
+			}
+
+			
+		}
+
+			
+
 
 			
 	};	
