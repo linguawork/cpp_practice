@@ -6,7 +6,7 @@
 /*   By: areggie <areggie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/28 15:14:38 by areggie           #+#    #+#             */
-/*   Updated: 2022/05/28 20:05:07 by areggie          ###   ########.fr       */
+/*   Updated: 2022/05/29 16:39:48 by areggie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,8 +31,8 @@
 		within the triangle (always working within one triangle).
 		7:05 We INSERT 8 (adding is always red) and we have violation (two consecutive reds) and red aunt, so we COLORFLIP in the triangle of aunt, grandparent, parent. So we change colors into:
 			R
-		/     \
-		B        B
+		  /    \
+		 B      B
 
 		8:32 it is interesting that the children of the root can be black or red,  alternatively one of them can be red or black. 3 states: all black, all red, one of them red(meaning another is black). And that is ok. As we can see.
 		8:56 = 4:17
@@ -220,8 +220,7 @@
 		}
 		//after inserting a new node, 8:50 now we need to check for violations
 		//it will take the node we just added
-		checkColor(newNode)
-			
+		checkColor(newNode)	
 	};	
 		
 
@@ -396,9 +395,75 @@
 		}
 		//after inserting a new node, 8:50 now we need to check for violations
 		//it will take the node we just added
-		checkColor(newNode); // see below
+		// checkColor(newNode); // see below
+		
+		//https://www.youtube.com/watch?v=pJWAi6u7Nq4
+		/****Lecture 5 starts here******************/
+
+		void checkColor(Node<K, V> node)
+		{
+			if (node == root)
+				return;
+			//violation of two consecutive red nodes 5:30
+			if(!node.black && !node.parent.black) 
+			{
+				//here will be the method to check aunt's color
+				//and to check the number of black nodes
+				correctTree(node);			
+			}
+			//checking color of the parent after corrections
+			//this method will go up to the root node
+			checkColor(node.parent)  
+		}
+
+		//6:59 
+		void correctTree(Node<K, V> node)
+		{
+			//8:12punting the other method
+			if (node.parent.isLeftChild) // meaning true
+			//if parent is left child, then autn is the right child
+			{
+				//we dont know if the aunt is null or a node (2 possibilities)
+				//so we foresee the possibility if it is null (which is blach)
+				if(node.parent.parent.right == NULL ||
+					node.parent.parent.right.isBlack) //if the node is black
+					return rotate(node);
+				//10:50 if the aunt is red we change color of grandparent and parent
+				if(node.parent.parent.right != NULL)
+					node.parent.parent.right.isBlack = false //if the node is red (Rob mistyped)
+				{
+					node.parent.parent.isBlack = false // сhange grandparent color to red	
+					node.parent.isBlack = true; //parent's color should be black
+					return;
+				}
+			}
+			
+			//underneath is the same code with left node	
+						//8:12punting the other method
+			if (node.parent.isLeftChild = false) // meaning parent is a Right Child
+			//then aunt is the left child
+			{
+				//we dont know if the aunt is null or a node (2 possibilities)
+				//so we foresee the possibility if it is null (which is blach)
+				if(node.parent.parent.left == NULL ||
+					node.parent.parent.left.isBlack) //if the node is black
+					return rotate(node);
+				//10:50 if the aunt is red we change color of grandparent and parent
+				if(node.parent.parent.left != NULL)
+					node.parent.parent.left.isBlack = false //if the node is red (Rob mistyped)
+				{
+					node.parent.parent.isBlack = false // сhange grandparent color to red	
+					node.parent.isBlack = true; //parent's color should be black
+					return;
+				}
+			}
+			
+		}
+		
+
 			
 	};	
 
-	//https://www.youtube.com/watch?v=pJWAi6u7Nq4
-	/****Lecture 5 starts here******************/
+	
+	
+	
