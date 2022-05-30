@@ -6,7 +6,7 @@
 /*   By: areggie <areggie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/28 15:14:38 by areggie           #+#    #+#             */
-/*   Updated: 2022/05/29 19:42:55 by areggie          ###   ########.fr       */
+/*   Updated: 2022/05/30 19:25:43 by areggie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -506,6 +506,54 @@
 				}
 				
 			}
+
+			//here is the lecture N7
+			//https://www.youtube.com/watch?v=fpESZSHrsp0
+
+			void leftRotate(Node <K, V> node)
+			//we have a ptr tree to perform a drag to left, 1:30
+			{
+				Node<K,V> temp = node.right; // save the right node into temp (to be parent)
+				node.right = temp.left // the freed node.right get temp.left
+				if (node.right != null) // if the right child is not empty
+				{
+					node.right.parent = node; // we attach node to him as a parent
+					node.right.isLeft =false; // mark as the right node with the boolean
+				}
+				//if we are the root node
+				if (node.parent == NULL)
+				{
+						//we are at the root node, which has the global ptr;
+						//the global root ptr should point to temp (which s)
+						root = temp;
+						temp = parent.null;
+				}
+				else
+				{ //manipulate 2 ptr here to parent and to tmp
+					(temp.parent = node.parent) //attach upper parent
+					if(node.isLeftChild) // if the node is the left child of the parent
+					{
+						temp.isLeftChild = true;
+						temp.parent.left = temp; // temp turns into left child 6:23
+					
+					}
+					else // // if the node is the right child of the parent
+					{
+						temp.isLeftChild = false;
+						temp.parent.right = temp;
+					}
+					
+					temp.left = node;
+					node.isLeft = true;
+					node.parent = temp; // 7:37 - 12:12 (repetition)
+				}	
+					
+					//the rest of the rotation we may write ourselves
+					//more information is in Cormen book
+			}
+			
+
+			
 
 			
 		}
